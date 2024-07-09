@@ -1,0 +1,20 @@
+/* App.css */
+
+.App {
+  text-align: center;
+  min-height: 100vh; /* Asegúrate de que el contenido tenga al menos la altura de la pantalla */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Esto asegurará que el footer esté en la parte inferior */
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
