@@ -1,7 +1,9 @@
-import React, { useState } from 'react';
-import './Navbar.css';
-import cartIcon from '../assets/img/cart.png';
-import Cart from './Cart';
+import React, { useState } from "react";
+import "./Navbar.css";
+import cartIcon from "../assets/img/cart.png";
+import Cart from "./Cart";
+import { Link, Outlet } from "react-router-dom";
+import Footer from "./Footer";
 
 function Navbar() {
   const [isCartOpen, setIsCartOpen] = useState(false);
@@ -17,18 +19,32 @@ function Navbar() {
           <a href="/">E-commerce</a>
         </div>
         <ul className="navbar-links">
-          <li><a href="/">Inicio</a></li>
-          <li><a href="/productos">Productos</a></li>
-          <li><a href="#quienes-somos">Quiénes somos</a></li>
-          <li><a href="/contacto">Contacto</a></li>
+          <li>
+            <Link to="/">Inicio</Link>
+          </li>
+          <li>
+            <Link to="/productos">Productos</Link>
+          </li>
+          <li>
+            <Link to="/QuienesSomos">Quiénes somos</Link>
+          </li>
+          <li>
+            <Link to="/contacto">Contacto</Link>
+          </li>
           <li>
             <a href="#!" onClick={handleCartClick}>
-              <img src={cartIcon} alt="Carrito de compras" className="cart-icon" />
+              <img
+                src={cartIcon}
+                alt="Carrito de compras"
+                className="cart-icon"
+              />
             </a>
           </li>
         </ul>
       </nav>
       <Cart isOpen={isCartOpen} onClose={handleCartClick} />
+      <Outlet />
+      <Footer />
     </>
   );
 }
