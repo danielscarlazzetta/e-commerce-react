@@ -4,6 +4,7 @@ import cartIcon from "../assets/img/cart.png";
 import Cart from "./Cart";
 import { Link, Outlet } from "react-router-dom";
 import Footer from "./Footer";
+import Card from "./Card";
 
 function Navbar() {
   const [isCartOpen, setIsCartOpen] = useState(false);
@@ -23,7 +24,7 @@ function Navbar() {
             <Link to="/">Inicio</Link>
           </li>
           <li>
-            <Link to="/productos">Productos</Link>
+            <Link to="/Card">Productos</Link>
           </li>
           <li>
             <Link to="/QuienesSomos">Quiénes somos</Link>
@@ -43,6 +44,8 @@ function Navbar() {
         </ul>
       </nav>
       <Cart isOpen={isCartOpen} onClose={handleCartClick} />
+
+
       <Outlet />
       <Footer />
     </>

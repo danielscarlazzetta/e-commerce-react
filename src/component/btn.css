@@ -1,0 +1,120 @@
+:root {  
+    --color-black-50: #f6f7f6;
+    --color-black-100: #e3e4e3;
+    --color-black-200: #c7c9c6;
+    --color-black-300: #a2a6a2;
+    --color-black-400: #7e837f;
+    --color-black-500: #5c615c;
+    --color-black-600: #4e534e;
+    --color-black-700: #414441;
+    --color-black-800: #363936;
+    --color-black-900: #303130;
+    --color-black-950: #191a19;
+  }
+  .card {
+    width: 300px;
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: var(--color-black-600);
+    color: var(--color-black-100);
+    overflow: hidden;
+  }
+  
+  .card-image {
+    width: 100%;
+    height: auto;
+  }
+  
+  .card-content {
+    padding: 1rem;
+  }
+  
+  .card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin: 0;
+    margin-bottom: 0.5rem;
+  }
+  
+  .card-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    max-height: 1.5rem;
+    overflow: hidden;
+    position: relative;
+    padding-right: 1rem;
+  }
+  
+  .card-tags::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 2rem;
+    background: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0)
+    );
+  }
+  
+  .tag {
+    background-color: var(--color-black-950);
+    color: var(--color-black-200);
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+    font-size: 0.75rem;
+    white-space: nowrap;
+  }
+  
+  .card-description {
+    font-size: 0.875rem;
+    color: var(--color-black-200);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 100%;
+    display: -webkit-box;
+    /* -webkit-line-clamp: 1; Limita el texto a 1 línea */
+    -webkit-box-orient: vertical;
+  }
+  
+  .card-price {
+    font-size: 2.5rem;
+    color: var(--color-black-50);
+    text-align: right;
+    margin: 1rem 0;
+  }
+  
+  .card-buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .card-button {
+    flex: 1;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    /* transition: background-color 0.3s ease; */
+  }
+  
+  .card-button:first-child {
+    margin-right: 0.5rem;
+    background-color: var(--color-black-900);
+    color: var(--color-black-50);
+  }
+  
+  .card-button:last-child {
+    margin-left: 0.5rem;
+    background-color: var(--color-black-400);
+    color: var(--color-black-50);
+  }
+  
+  .card-button:hover {
+    transform: scale(1.05);
+  }
