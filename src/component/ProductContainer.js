@@ -30,6 +30,8 @@ function ProductContainer() {
   });
 
   return (
+    <>
+    
     <div className="product-container">
       <div className="search-filters">
         <input
@@ -75,6 +77,7 @@ function ProductContainer() {
         <Card />
       </div>
     </div>
+    </>
   );
 }
 

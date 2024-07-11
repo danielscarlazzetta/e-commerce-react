@@ -5,8 +5,6 @@ import 'slick-carousel/slick/slick-theme.css';
 import './SliderComponent.css';
 
 import imgZapatilla from '../assets/img/maceimg.png'
-import Card from './Card';
-import ProductContainerSlider from './ProductContainerSlider';
 
 const SliderComponent = () => {
   const settings = {
@@ -35,7 +33,6 @@ const SliderComponent = () => {
   return (
     <div className="slider-container">
       <Slider {...settings}>
-        <ProductContainerSlider />
         <div className="slide-item">
           <img src={imgZapatilla} alt="Slide 1" />
           <div className="slide-content">

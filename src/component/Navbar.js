@@ -28,7 +28,7 @@ function Navbar() {
         </div>
         <ul className={`navbar-links ${isMobileMenuOpen ? "active" : ""}`}>
           <li>
-            <Link to="/SliderComponent" onClick={() => setIsMobileMenuOpen(false)}>Inicio</Link>
+            <Link to="/Inicio" onClick={() => setIsMobileMenuOpen(false)}>Inicio</Link>
           </li>
           <li>
             <Link to="/ProductContainer" onClick={() => setIsMobileMenuOpen(false)}>Productos</Link>
@@ -52,7 +52,6 @@ function Navbar() {
       </nav>
       <Cart isOpen={isCartOpen} onClose={handleCartClick} />
       <Outlet />
-      <Footer />
     </>
   );
 }
