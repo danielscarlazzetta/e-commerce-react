@@ -1,5 +1,5 @@
 import React from 'react';
-import './btn.css';
+import './Card.css';
 import imgCard  from '../assets/img/maceimg.png'
 
 function Card() {

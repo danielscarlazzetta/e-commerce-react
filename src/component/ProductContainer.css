@@ -10,6 +10,26 @@
   margin-bottom: 20px;
   display: flex;
   gap: 10px;
+  flex-wrap: wrap;
+}
+
+.search-filters input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  flex: 1;
+  min-width: 200px;
+}
+
+.tag-select {
+  flex: 1;
+  min-width: 200px;
+}
+
+.select__control {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
 
 .cards-wrapper {

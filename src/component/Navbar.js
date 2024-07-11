@@ -4,13 +4,17 @@ import cartIcon from "../assets/img/cart.png";
 import Cart from "./Cart";
 import { Link, Outlet } from "react-router-dom";
 import Footer from "./Footer";
-import Card from "./Card";
 
 function Navbar() {
   const [isCartOpen, setIsCartOpen] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const handleCartClick = () => {
     setIsCartOpen(!isCartOpen);
+  };
+
+  const handleMobileMenuClick = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
   };
 
   return (
@@ -19,18 +23,21 @@ function Navbar() {
         <div className="navbar-logo">
           <a href="/">E-commerce</a>
         </div>
-        <ul className="navbar-links">
+        <div className="navbar-toggle" onClick={handleMobileMenuClick}>
+          &#9776;
+        </div>
+        <ul className={`navbar-links ${isMobileMenuOpen ? "active" : ""}`}>
           <li>
-            <Link to="/">Inicio</Link>
+            <Link to="/" onClick={() => setIsMobileMenuOpen(false)}>Inicio</Link>
           </li>
           <li>
-            <Link to="/ProductContainer">Productos</Link>
+            <Link to="/ProductContainer" onClick={() => setIsMobileMenuOpen(false)}>Productos</Link>
           </li>
           <li>
-            <Link to="/QuienesSomos">Quiénes somos</Link>
+            <Link to="/QuienesSomos" onClick={() => setIsMobileMenuOpen(false)}>Quiénes somos</Link>
           </li>
           <li>
-            <Link to="/contacto">Contacto</Link>
+            <Link to="/contacto" onClick={() => setIsMobileMenuOpen(false)}>Contacto</Link>
           </li>
           <li>
             <a href="#!" onClick={handleCartClick}>
@@ -44,8 +51,6 @@ function Navbar() {
         </ul>
       </nav>
       <Cart isOpen={isCartOpen} onClose={handleCartClick} />
-
-
       <Outlet />
       <Footer />
     </>
