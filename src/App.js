@@ -7,6 +7,8 @@ import QuienesSomos from './component/QuienesSomos';
 import Default from './component/Default';
 import Card from './component/Card';
 import ProductContainer from './component/ProductContainer';
+import SliderComponent from './component/SliderComponent';
+import ProductContainerSlider from './component/ProductContainerSlider';
 
 
 
@@ -18,6 +20,8 @@ function App() {
           <Route path='QuienesSomos' element={<QuienesSomos />} />
           <Route path='Card' element={<Card />} />
           <Route path='ProductContainer' element={<ProductContainer />} />
+          <Route path='SliderComponent' element={<SliderComponent />} />
+          <Route path='ProductContainerSlider ' element={<ProductContainerSlider />} />
           <Route path='*' element={<Default />} />
         </Route>
       </Routes>

@@ -28,7 +28,7 @@ function Navbar() {
         </div>
         <ul className={`navbar-links ${isMobileMenuOpen ? "active" : ""}`}>
           <li>
-            <Link to="/" onClick={() => setIsMobileMenuOpen(false)}>Inicio</Link>
+            <Link to="/SliderComponent" onClick={() => setIsMobileMenuOpen(false)}>Inicio</Link>
           </li>
           <li>
             <Link to="/ProductContainer" onClick={() => setIsMobileMenuOpen(false)}>Productos</Link>

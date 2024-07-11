@@ -1,0 +1,27 @@
+.product-container-slider {
+    display: flex;
+    overflow-x: auto; /* Permite scroll horizontal si los elementos no caben */
+    justify-content: center; /* Centra los elementos horizontalmente */
+    margin: 0 -10px; /* Ajusta el margen negativo para compensar los paddings internos */
+    margin-top: 3%;
+  }
+  
+  .product-container-slider > * {
+    flex: 0 0 auto; /* Evita que los elementos se expandan */
+    width: calc(100% / 3 - 20px); /* Ajusta el ancho de cada Card (menos el espacio entre ellos) */
+    margin: 0 10px; /* Espacio entre los elementos */
+    box-sizing: border-box; /* Incluye padding y borde en el cálculo del tamaño total */
+  }
+  
+  @media (max-width: 768px) {
+    .product-container-slider {
+      flex-wrap: nowrap; /* Evita que los elementos se envuelvan en múltiples líneas */
+      justify-content: center; /* Centra los elementos horizontalmente */
+    }
+  
+    .product-container-slider > * {
+      width: calc(100% - 20px); /* Ajuste para dispositivos móviles */
+      margin: 0 10px; /* Espacio entre los elementos */
+    }
+  }
+  
