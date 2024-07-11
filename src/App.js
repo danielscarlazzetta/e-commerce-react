@@ -6,6 +6,7 @@ import { Routes, Route } from 'react-router-dom';
 import QuienesSomos from './component/QuienesSomos';
 import Default from './component/Default';
 import Card from './component/Card';
+import ProductContainer from './component/ProductContainer';
 
 
 
@@ -16,6 +17,7 @@ function App() {
         <Route path='/' element={<Navbar />}>
           <Route path='QuienesSomos' element={<QuienesSomos />} />
           <Route path='Card' element={<Card />} />
+          <Route path='ProductContainer' element={<ProductContainer />} />
           <Route path='*' element={<Default />} />
         </Route>
       </Routes>
