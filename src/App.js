@@ -10,6 +10,8 @@ import ProductContainer from './component/ProductContainer';
 import SliderComponent from './component/SliderComponent';
 import ProductContainerSlider from './component/ProductContainerSlider';
 import Inicio from './component/Inicio';
+import Dashboard from './component/Dashboard/Dashboard';
+import ProductList from './component/Dashboard/ProductList';
 
 
 
@@ -25,6 +27,8 @@ function App() {
           <Route path='ProductContainer' element={<ProductContainer />} />
           <Route path='SliderComponent' element={<SliderComponent />} />
           <Route path='ProductContainerSlider ' element={<ProductContainerSlider />} />
+          <Route path='ProductList' element={<ProductList />} />
+          <Route path='Dashboard' element={<Dashboard />} />
           <Route path='*' element={<Default />} />
         </Route>
       </Routes>

@@ -40,12 +40,16 @@ function Navbar() {
             <Link to="/contacto" onClick={() => setIsMobileMenuOpen(false)}>Contacto</Link>
           </li>
           <li>
+            <Link to="/Dashboard" onClick={() => setIsMobileMenuOpen(false)}>Dashboard</Link>
+          </li>
+          <li>
             <a href="#!" onClick={handleCartClick}>
-              <img
+              {/* <img
                 src={cartIcon}
                 alt="Carrito de compras"
                 className="cart-icon"
-              />
+              /> */}
+              <i className="icon">🛒</i>
             </a>
           </li>
         </ul>
