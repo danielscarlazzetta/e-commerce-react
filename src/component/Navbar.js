@@ -1,9 +1,7 @@
 import React, { useState } from "react";
 import "./Navbar.css";
-import cartIcon from "../assets/img/cart.png";
 import Cart from "./Cart";
 import { Link, Outlet } from "react-router-dom";
-import Footer from "./Footer";
 
 function Navbar() {
   const [isCartOpen, setIsCartOpen] = useState(false);

@@ -28,7 +28,7 @@ const DashboardProduct = () => {
   return (
      <>
        <main className="main-content">
-        <h1>Dashboard</h1>
+        <h1>Dashboard a</h1>
         <ProductList
         products={products}
         onUpdate={handleUpdate}

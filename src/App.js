@@ -12,6 +12,7 @@ import ProductContainerSlider from './component/ProductContainerSlider';
 import Inicio from './component/Inicio';
 import Dashboard from './component/Dashboard/Dashboard';
 import ProductList from './component/Dashboard/ProductList';
+import DashboardProduct from './component/Dashboard/DashboardProduct';
 
 
 
@@ -19,6 +20,7 @@ function App() {
   return (
     <div>
       <Routes>
+
         <Route path='/' element={<Navbar />}>
         <Route path='/' element={<Navigate to="/Inicio" />} />
           <Route path='Inicio' element={<Inicio />} />
@@ -28,9 +30,14 @@ function App() {
           <Route path='SliderComponent' element={<SliderComponent />} />
           <Route path='ProductContainerSlider ' element={<ProductContainerSlider />} />
           <Route path='ProductList' element={<ProductList />} />
-          <Route path='Dashboard' element={<Dashboard />} />
           <Route path='*' element={<Default />} />
         </Route>
+
+        <Route path='Dashboard' element={<Dashboard />}>
+          <Route path='ProductList' element={<ProductList />} />
+          <Route path='DashboardProduct' element={<DashboardProduct />} />
+        </Route>
+
       </Routes>
     </div>
   );

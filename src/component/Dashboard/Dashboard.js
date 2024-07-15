@@ -1,18 +1,17 @@
-import React from 'react';
-import './Dashboard.css';
-import DashboardProduct from './DashboardProduct';
+import React from "react";
+import "./Dashboard.css";
+import { Link, Outlet } from "react-router-dom";
 
 const Dashboard = () => {
-
   return (
     <div className="dashboard">
       <aside className="sidebar">
         <ul>
           <li>
-            <a href="#productos">
+            <Link to="/Dashboard/DashboardProduct">
               <i className="icon">🛒</i>
               <span className="text">Productos</span>
-            </a>
+            </Link>
           </li>
           <li>
             <a href="#usuarios">
@@ -26,10 +25,15 @@ const Dashboard = () => {
               <span className="text">Ventas</span>
             </a>
           </li>
+          <li>
+            <Link to="/Inicio">
+              <i className="icon">💰</i>
+              <span className="text">Salir</span>
+            </Link>
+          </li>
         </ul>
       </aside>
-      <DashboardProduct />
-
+      <Outlet />
     </div>
   );
 };
