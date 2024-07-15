@@ -15,7 +15,7 @@ const initialProducts = [
     tags: ['Tag3', 'Tag4'],
     price: 200,
     stock: 15,
-    images: ['img1.jpg', 'img2.jpg'],
+    images: ['img1.jpg', 'img2.jpg', 'img2.jpg', 'img2.jpg', 'img2.jpg'],
   },
   {
     id: 3,

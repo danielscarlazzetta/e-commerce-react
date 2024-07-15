@@ -1,0 +1,96 @@
+const initialUsuarios = [
+  {
+    id: 1,
+    name: 'Juan 1',
+    email: 'Descripción breve del producto 1',
+    numerFhone: '123123123',
+    direccion: 'casa siempre viva 12',
+  },
+  {
+    id: 2,
+    name: 'Juan 1',
+    email: 'Descripción breve del producto 1',
+    numerFhone: '123123123',
+    direccion: 'casa siempre viva 12',
+  },
+  {
+    id: 3,
+    name: 'Juan 1',
+    email: 'Descripción breve del producto 1',
+    numerFhone: '123123123',
+    direccion: 'casa siempre viva 12',
+  },
+  {
+    id: 4,
+    name: 'Juan 1',
+    email: 'Descripción breve del producto 1',
+    numerFhone: '123123123',
+    direccion: 'casa siempre viva 12',
+  },
+  {
+    id: 5,
+    name: 'Juan 1',
+    email: 'Descripción breve del producto 1',
+    numerFhone: '123123123',
+    direccion: 'casa siempre viva 6',
+  },
+  {
+    id: 6,
+    name: 'Juan 1',
+    email: 'Descripción breve del producto 1',
+    numerFhone: '123123123',
+    direccion: 'casa siempre viva 12',
+  },
+  {
+    id: 7,
+    name: 'Juan 1',
+    email: 'Descripción breve del producto 1',
+    numerFhone: '123123123',
+    direccion: 'casa siempre viva 32',
+  },
+  {
+    id: 8,
+    name: 'Juan 1',
+    email: 'Descripción breve del producto 1',
+    numerFhone: '123123123',
+    direccion: 'casa siempre viva 12',
+  },
+  {
+    id: 9,
+    name: 'Juan 1',
+    email: 'Descripción breve del producto 1',
+    numerFhone: '123123123',
+    direccion: 'casa siempre viva 125',
+  },
+  {
+    id: 10,
+    name: 'Juan 1',
+    email: 'Descripción breve del producto 1',
+    numerFhone: '123123123',
+    direccion: 'casa siempre viva 12',
+  },
+  {
+    id: 11,
+    name: 'Juan 1',
+    email: 'Descripción breve del producto 1',
+    numerFhone: '123123123',
+    direccion: 'casa siempre viva 2',
+  },
+  {
+    id: 12,
+    name: 'Juan 2',
+    email: 'Descripción breve del producto 1',
+    numerFhone: '123123123',
+    direccion: 'casa siempre viva 12',
+  },
+  {
+    id: 13,
+    name: 'Juan 23',
+    email: 'Descripción breve del producto 1',
+    numerFhone: '123123123',
+    direccion: 'casa siempre viva 1232',
+  },
+
+];
+
+export default initialUsuarios;

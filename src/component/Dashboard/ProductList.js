@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './ProductList.css';
+import '../Btn.css';
 
 const ProductList = ({ products, onUpdate, onDelete, onAddDiscount }) => {
   const [discount, setDiscount] = useState({});
@@ -28,9 +29,9 @@ const ProductList = ({ products, onUpdate, onDelete, onAddDiscount }) => {
             value={discount[product.id] || ''}
             onChange={(e) => handleDiscountChange(product.id, e.target.value)}
           />
-          <button onClick={() => onAddDiscount(product.id, discount[product.id] || 0)}>Agregar Descuento</button>
-          <button onClick={() => onUpdate(product.id)}>Actualizar</button>
-          <button onClick={() => onDelete(product.id)}>Eliminar</button>
+          <button class="card-button" onClick={() => onAddDiscount(product.id, discount[product.id] || 0)}>Agregar Descuento</button>
+          <button class="card-button" onClick={() => onUpdate(product.id)}>Actualizar</button>
+          <button class="card-button" onClick={() => onDelete(product.id)}>Eliminar</button>
         </div>
       ))}
     </div>

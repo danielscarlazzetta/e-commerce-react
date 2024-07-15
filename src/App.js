@@ -13,6 +13,7 @@ import Inicio from './component/Inicio';
 import Dashboard from './component/Dashboard/Dashboard';
 import ProductList from './component/Dashboard/ProductList';
 import DashboardProduct from './component/Dashboard/DashboardProduct';
+import DashboardUsers from './component/Dashboard/Usuarios/DashboardUsers';
 
 
 
@@ -34,8 +35,8 @@ function App() {
         </Route>
 
         <Route path='Dashboard' element={<Dashboard />}>
-          <Route path='ProductList' element={<ProductList />} />
           <Route path='DashboardProduct' element={<DashboardProduct />} />
+          <Route path='DashboardUsers' element={<DashboardUsers />} />
         </Route>
 
       </Routes>

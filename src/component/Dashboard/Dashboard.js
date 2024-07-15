@@ -14,10 +14,10 @@ const Dashboard = () => {
             </Link>
           </li>
           <li>
-            <a href="#usuarios">
+            <Link to="/Dashboard/DashboardUsers">
               <i className="icon">👥</i>
               <span className="text">Usuarios</span>
-            </a>
+            </Link>
           </li>
           <li>
             <a href="#ventas">
